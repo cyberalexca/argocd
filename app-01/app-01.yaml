@@ -56,7 +56,5 @@ spec:
       services:
         - name: nginx-app-01
           port: 80
-      middlewares:
-        - name: default-headers
   tls:
     secretName: trafic-braga-me-production-tls
