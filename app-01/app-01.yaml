@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-app-01
-  namespace: default
+  namespace: app-01
 spec:
   selector:
     app: app-01
@@ -44,7 +44,7 @@ apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:
   name: nginx-app-01
-  namespace: default
+  namespace: app-01
   annotations: 
     kubernetes.io/ingress.class: traefik-external
 spec:
